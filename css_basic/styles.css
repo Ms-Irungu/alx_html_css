@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    /* Light background for contrast */
+    color: #333;
+    /* Dark text for readability */
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a9d8f; /* Teal background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 2rem; /* Make the logo larger */
+    margin-right: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 15px 10px;
+    background-color: #264653; /* Darker teal */
+    color: white;
+}
+
+footer a {
+    color: #2a9d8f; /* Teal color for the link */
+    text-decoration: none;
+    font-weight: bold; /* Make the link stand out */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    margin: 10px;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #e9c46a; /* Light yellow background */
+    border: 2px solid #f4a261; /* Orange border */
+    border-radius: 8px;
+}
+
+article h1, article h2, article h3, article p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f4a261; /* Light orange background */
+    border: 2px solid #e76f51; /* Darker orange border */
+    border-radius: 8px;
+}
