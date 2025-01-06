@@ -1,0 +1,28 @@
+body{
+    background-image: url(/headphones/images/headphones_hero_1.jpg);
+}
+nav{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background-color: #333; */
+    padding: 20px;
+}
+
+nav img {
+    /* background-color: red; */
+    width: 130px;
+    height: 28px;
+    margin-left: 300px;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 20px;
+    font-family: source san pro, sans-serif;
+
+}
+nav a:hover{
+    color: #FF6565;
+}
