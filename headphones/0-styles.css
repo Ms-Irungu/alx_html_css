@@ -11,7 +11,7 @@ nav{
 
 nav img {
     /* background-color: red; */
-    width: 130px;
+    width: 170px;
     height: 28px;
     margin-left: 300px;
 }
@@ -26,3 +26,41 @@ nav a{
 nav a:hover{
     color: #FF6565;
 }
+
+.heropiece{
+    color: #ffffff;
+    margin-top: 310px; 
+    text-align: center;
+    font-family: source san pro, sans-serif;
+}
+
+.heropiece h2{
+    font-size: 43px;
+    font-weight: bold;
+}
+.sub-heading{
+    font-size: 21px;
+    font-weight: bold;
+    margin: 30px auto;
+}
+
+.heropiece a{
+    background-color: #ff6563;
+    color: #ffffff;
+    padding: 10px 20px; 
+    border-radius: 30px;     
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.heropiece a:hover{
+    opacity: 0.9;
+}
+ .description{ 
+    font-size: 18px;
+    margin: 100px auto; 
+    width: 50%;
+} 
+
+
