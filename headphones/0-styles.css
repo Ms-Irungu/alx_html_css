@@ -1,70 +1,114 @@
-#main{
+body{
+    font-family: source san pro , sans-serif;
+}
+header{
     background-image: url(/headphones/images/headphones_hero_1.jpg);
     background-repeat: no-repeat;
-    min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
 nav{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 2% 6%;
+    background-color: blueviolet;
 }
-
-nav img {
-    width: 170px;
-    height: 28px;
-    margin-left: 300px;
+nav img{
+    width: 150px;
+    /* height: 30px; */
 }
-nav a{
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
     text-decoration: none;
     color: #ffffff;
-    display: inline-block;
-    margin: 0 20px;
-    font-family: source san pro, sans-serif;
-
+    font-size: 15px;
 }
-nav a:hover{
+.nav-links ul li :hover{
     color: #FF6565;
 }
-
 .main-content{
     color: #ffffff;
-    margin-top: 310px; 
+    width: 90%;
+    /* background-color: purple; */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    font-family: source san pro, sans-serif;
 }
-
-.main-content h2{
-    font-size: 43px;
-    font-weight: bold;
-    padding: 10px;
+.main-content h1{
+    font-size: 50px;
 }
 .sub-heading{
-    font-size: 21px;
-    font-weight: bold;
-    padding: 10px;
+    margin: 10px 0 40px;
+    font-size: 18px;
+    /* font-weight: bold; */
 }
-
-.main-content a{
-    background-color: #ff6563;
-    color: #ffffff;
-    padding: 10px 20px; 
-    border-radius: 30px;     
-    text-decoration: none;
+.main-content-btn{
     display: inline-block;
-    margin: 30px auto;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff6563;
+    padding: 10px 20px; 
+    border-radius: 30px;
+    cursor: pointer;
 }
-
-.main-content a:hover{
+.main-content-btn:hover{
     opacity: 0.9;
 }
-.description{ 
+.description{
+    margin: 30px 0;
     font-size: 18px;
-    padding: 100px;
-    width: 50%;
-    margin: 0px auto;
-} 
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
 
+@media only screen and (max-width: 768px){
+    .main-content h1{
+        font-size: 30px;
+    }
+    .sub-heading{
+        font-size: 15px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        /* background: palevioletred; */
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        text-align: left;
+        transition: 1s;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+        display: block;
+        color: #ffffff;
+        margin: 10px;
+        font-size: 22px;
+        cursor:pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
 
