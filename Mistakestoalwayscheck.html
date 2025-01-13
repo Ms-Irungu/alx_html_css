@@ -1,0 +1,147 @@
+Your issue with some sections not appearing to be of full width on responsive screens could stem from either missing width styles (like width: 100%) or unintended margins/paddings applied to certain containers or elements.
+
+Let’s debug and suggest fixes.
+
+Key Observations in Your Code
+Default body margin: Browsers usually apply a default margin to the <body> tag, which can lead to visible gaps.
+Use of width: 90% in .main-content: This limits the main content width on responsive screens.
+Sections lack box-sizing: Without proper box-sizing, padding might extend beyond the intended width of elements.
+Responsive behavior not fully defined: There's no clear media query or CSS handling of widths for smaller screen sizes.
+Suggested Fixes
+Here’s how we can resolve the issue:
+
+Global Reset for Body and Box Model
+Add the following:
+
+css
+Copy code
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+This ensures no unwanted gaps from margins or paddings across the site.
+box-sizing: border-box ensures padding is included in the width calculation.
+Fixing the .main-content Width
+The current width: 90% might look smaller on wider screens. Modify it to:
+
+css
+Copy code
+.main-content {
+    width: 100%;
+    max-width: 1200px; /* Optional: Maintain a max-width for readability */
+    padding: 0 20px; /* Add inner padding for breathing space */
+}
+width: 100% ensures the content spans the screen width.
+padding ensures there’s spacing between the content and screen edges.
+Ensuring Full-Width Sections
+For each <section> (e.g., .what-we-do, .our-results, .contact-us), ensure:
+
+css
+Copy code
+section {
+    width: 100%;
+    padding: 20px; /* Add space inside */
+    margin: 0 auto; /* Center content horizontally */
+}
+Use width: 100% to stretch sections across the screen.
+Handling Nav and Footer Width
+Ensure your nav and footer also span full width:
+
+css
+Copy code
+nav, footer {
+    width: 100%;
+}
+Media Query for Smaller Screens
+Add a media query to adjust padding/margins on smaller screens:
+
+css
+Copy code
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 28px; /* Scale down the font size */
+    }
+
+    .main-content {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+Full Updated CSS Example (Modified Key Sections)
+css
+Copy code
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/headphones/images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 50px;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 28px;
+    }
+
+    .main-content {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+Debugging Tips
+After making the changes:
+
+Check the sections in your browser's responsive design mode (developer tools).
+Inspect any elements still not spanning full width; they might inherit styles from parent elements.
+If needed, add overflow: hidden to parent containers to suppress horizontal scrolling.
