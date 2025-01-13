@@ -87,6 +87,9 @@ nav img{
     color: black;
     
 }
+/* .what-we-do-content{
+    background-color: lightcoral;
+} */
 .what-we-do h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -137,6 +140,68 @@ nav img{
     color: #666;
 }
 
+.our-results{
+    background-image: url(/headphones/images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    /* min-height: 80vh; */
+    width: 100%;  
+    text-align: center;
+    padding: 60px 20px;
+    
+}
+.our-results-content {
+    max-width: 800px;
+    margin: 0 auto 30px; /* Center and add space below */
+    padding: 20px;
+}
+
+.our-results-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.our-results-content p{
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: #ffffff;
+}
+.results{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.result{
+    position: relative;
+    background-image: url(/headphones/images/pentagone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+
+}
+.result h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.result p {
+    font-size: 0.875rem;
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 768px){
     /* Disable fixed background on smaller screens - removed this as its already put in place it header section. Finally changed the background-attachment from fixed to scroll */
     /* header {
@@ -175,6 +240,13 @@ nav img{
     }
     .nav-links ul{
         padding: 30px;
+    }
+    .our-results-content h1 {
+        font-size: 2rem;
+    }
+    .result {
+        width: 120px; /* Smaller pentagons on smaller screens */
+        height: 120px;
     }
    
 
