@@ -100,8 +100,9 @@ nav img{
     }
     .nav-links{
         position: absolute;
+        background-color: #797C83;
         /* background: palevioletred; */
-        height: 100vh;
+        height: 40vh;
         width: 200px;
         top: 0;
         right: -200px;
