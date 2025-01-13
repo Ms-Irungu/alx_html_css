@@ -137,15 +137,6 @@ nav img{
     color: #666;
 }
 
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 768px){
     /* Disable fixed background on smaller screens - removed this as its already put in place it header section. Finally changed the background-attachment from fixed to scroll */
     /* header {

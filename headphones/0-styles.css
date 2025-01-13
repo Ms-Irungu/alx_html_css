@@ -5,11 +5,12 @@ header{
     background-image: url(/headphones/images/headphones_hero_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     min-height: 100vh;
     width: 100%;
     position: relative;
+    overflow: hidden; /* Prevent content overflow */
 }
 
 nav{
@@ -17,7 +18,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 2% 6%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 nav img{
     width: 150px;
@@ -80,6 +81,14 @@ nav img{
 }
 
 @media only screen and (max-width: 768px){
+    /* Disable fixed background on smaller screens - removed this as its already put in place it header section. Finally changed the background-attachment from fixed to scroll */
+    /* header {
+        background-attachment: scroll; 
+    } */
+    .main-content {
+        padding: 20px;
+        text-align: center;
+    }
     .main-content h1{
         font-size: 30px;
     }
