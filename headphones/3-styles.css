@@ -290,48 +290,6 @@ form textarea:focus {
 .btn-submit:hover{
     opacity: 0.9;
 }
-footer{
-    background-color: #071629;
-    color: #ffffff;
-    padding: 30px 40px 20px;
-    text-align: center;
-    width: 100%;
-}
-
-/* Flexbox layout for logo and socials */
-.footer-content {
-    /* background-color: #ff6563; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px; /* Adds spacing between content and copyright */
-}
-.footer-logo img {
-    max-width: 150px; /* Adjust logo size */
-    height: auto; /* Maintain aspect ratio */
-}
-.footer-social a {
-    margin: 0 10px; /* Spacing between social icons */
-    color: #ffffff; /* Default color for icons */
-    text-decoration: none;
-    font-size: 24px; /* Adjust size of social icons */
-    transition: color 0.3s ease;
-}
-
-.footer-social a:hover {
-    color: #FF6565; /* Add a hover effect for social icons */
-}
-
-/* Copyright section */
-.copyright-info {
-    /* background-color: #ff6563; */
-    text-align: center;
-    font-size: 10px;
-    /* Light separator */
-    /* border-top: 1px solid #ffffff33;  */
-    padding-top: 10px; /* Space above the copyright text */
-}
-
 
 @media only screen and (max-width: 768px){
     /* Disable fixed background on smaller screens - removed this as its already put in place it header section. Finally changed the background-attachment from fixed to scroll */
@@ -385,12 +343,7 @@ footer{
         width: 120px; /* Smaller pentagons on smaller screens */
         height: 120px;
     }
-    .footer-content {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center;
-        gap: 20px; /* Space between logo and socials */ 
-    }
-
+    
 }
 
 
