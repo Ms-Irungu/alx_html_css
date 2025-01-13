@@ -202,6 +202,76 @@ nav img{
     margin-top: 20px;
 }
 
+.contact-us{
+    /* background-color: lightgreen; */
+    padding: 50px 20px;
+    text-align: center;
+}
+.contact{
+    /* background-color: lightcoral; */
+    max-width: 500px;
+    margin: 0 auto; /* Center and add space below */
+}
+.contact-us h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+/* Form Styling */
+form {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between inputs */
+    padding: 20px;
+}
+/* Input and Textarea Styles */
+form input[type="text"],
+form input[type="email"]{
+    width: 100%; /* Full width within the form container */
+    border: none; /* Remove default borders */
+    border-bottom: 2px solid #333; /* Add underline */
+    outline: none; /*Remove focus outline*/
+    padding: 10px 5px;
+    font-size: 1rem;
+    background: none; /* Transparent background */
+    color: black;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+form textarea {
+    width: 100%; /* Full width within the form container */
+    height: 80px;
+    border: none; /* Remove default borders */
+    border-bottom: 2px solid #333; /* Add underline */
+    outline: none; /*Remove focus outline*/
+    padding: 10px 5px;
+    font-size: 1rem;
+    background: none; /* Transparent background */
+    color: black;
+    /* Smooth border transition */
+    /* transition: border-color 0.3s ease;  */
+}
+/*form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-bottom: 2px solid #007bff; 
+}
+*/
+.btn-submit{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff6563;
+    padding: 10px 20px; 
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    opacity: 0.9;
+}
+
+
 @media only screen and (max-width: 768px){
     /* Disable fixed background on smaller screens - removed this as its already put in place it header section. Finally changed the background-attachment from fixed to scroll */
     /* header {
