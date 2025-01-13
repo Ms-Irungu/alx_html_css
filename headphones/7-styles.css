@@ -333,6 +333,7 @@ footer{
 }
 
 
+
 @media only screen and (max-width: 768px){
     /* Disable fixed background on smaller screens - removed this as its already put in place it header section. Finally changed the background-attachment from fixed to scroll */
     header {
@@ -359,8 +360,9 @@ footer{
     }
     .nav-links{
         position: absolute;
+        background-color: #797C83;
         /* background: palevioletred; */
-        height: 100vh;
+        height: 40vh;
         width: 200px;
         top: 0;
         right: -200px;
