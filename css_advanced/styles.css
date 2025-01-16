@@ -4,7 +4,8 @@ body{
 }
 header{
     background-image: url(/css_advanced/Images/background.png);
-    background-position: center;
+    background-position: top center;
+    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -37,75 +38,131 @@ header{
 .navbar ul li a{
     text-decoration: none;
     color: white;
+    font-weight: 500;
     font-size: 13px;
 }
 
 .navbar ul li a:hover{
-    color: #c271ff;
+    color: #d2aaf3;
 }
-
 .part1{
-    background-color: aqua;
-    padding: 30px 20px;
-    max-width: 600px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    align-items: center;
-    color: #ffffff;
-    
+    text-align: center; 
+    /* background-color: blueviolet; */
+    padding: 1rem;
+    margin-top: 200px;
 }
 .part1 h1{
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-.part1 span{
-    font-size: 1.0rem;
-    display: inline-block;
-    font-weight: 550;
-    margin-left: 10px;
-}
-.part1 button{
-    display: block;
-    padding: 10px 20px;
-    background: #c271ff;
     color: white;
-    border: none;
-    border-radius: 20px;
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+.span-container{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    color: #ffffff;
     font-size: 1rem;
-    margin: 20px auto 0;
+}
+button{
+    background-color: #C271FF;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 40px 0;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
 }
-.part1 button:hover {
-    background: #8a3ce0; /* Slightly darker shade on hover */
-    transform: translateY(-3px);
-}
-.part1 button:active {
-    background: #722dbd;
-    transform: translateY(0);
+button:hover{
+    background-color: #8e44ad;
 }
 .part2{
-    background-color: blueviolet;
-    position: absolute;
-    padding: 30px 20px;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
+    /* background-color: aqua; */
     text-align: center;
-    color: white;
+    padding: 20px;
+    margin-top: 200px;
+}
 
-    
+.part2 h1{
+    font-size: 2rem;
+    color: #ffffff;
+}
+.part2 h1 span{
+    color: blueviolet;
 }
 .smile-of-the-year{
     display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0;
 }
 .content{
-    display: block;
-    margin: 0px 60px;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.content h3, p{
+    color: #ffffff;
+}
+.content h3{
+    font-size: 1.0rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.testimonials{
+    background-color: #c271ff;
+    padding: 120px 30px;
+}
+.testimonials-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px dotted red; */
+}
+
+.testimonials-container > * {
+    /* outline: 2px solid lime;  */
+    /* flex: 1 1 300px; */
+    /* text-align: center; */
+    
+}
+.testimonial-text{
+    color: #ffffff;
+}
+.testimonial-text h3{
+    font-size: 1.0rem;
+    margin: 20px 0 10px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.popular-tutorials{
+    background-color: lightseagreen;
+    padding: 50px 50px;
+    text-align: center;
+}
+.popular-tutorials h2{
+    color: black;
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+}
+.popular-tutorials h2 span{
+    color: blueviolet;
+}
+.tutorials-container{
+    background-color: palevioletred;
+    padding: 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.tutorials{
+    background-color: brown;
+    padding: 20px;
+}
+.images{
+    position: relative;
+}
+.second-img{
+    position: absolute;
+    
 }
